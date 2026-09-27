@@ -1,4 +1,4 @@
-# 🐂 Easy Meat — Front-End
+# Easy Meat — Front-End
 
 Interface web da plataforma **Easy Meat**, um marketplace B2B para comercialização de carnes que conecta produtores (vendedores) e compradores institucionais.
 
@@ -138,3 +138,4 @@ npm run dev
 ## 👤 Autor / Projeto
 
 Projeto Easy Meat — plataforma B2B de comercialização de carnes (agronegócio + tecnologia).
+Autores: José Nataniel e Ryan Victor
