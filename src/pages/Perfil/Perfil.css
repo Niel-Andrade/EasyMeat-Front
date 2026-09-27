@@ -1,0 +1,184 @@
+/* ==========================================================
+   EASY MEAT — Perfil
+   ========================================================== */
+
+.perfil-page {
+  flex: 1;
+  background-color: var(--color-background);
+  padding: var(--space-8) 0;
+}
+
+.perfil-page__cabecalho {
+  margin-bottom: var(--space-6);
+}
+.perfil-page__cabecalho h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-text);
+  margin: 0 0 var(--space-2);
+}
+.perfil-page__cabecalho p {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.perfil-page__mensagem {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+.perfil-page__mensagem--sucesso {
+  background-color: #e7f5ea;
+  color: #1e7a3a;
+  border: 1px solid #b8e0c2;
+}
+.perfil-page__mensagem--erro {
+  background-color: var(--color-error-light);
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
+}
+.perfil-page__mensagem--info {
+  background-color: #e7f0fa;
+  color: #1d4a91;
+  border: 1px solid #b8d1f0;
+}
+
+.perfil-page__layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: var(--space-8);
+}
+
+/* ============ CARD DE PERFIL ============ */
+.perfil-page__card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  position: sticky;
+  top: var(--space-6);
+}
+
+.perfil-page__avatar-grande {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6rem;
+  font-weight: var(--font-weight-bold);
+  overflow: hidden;
+  margin-bottom: var(--space-3);
+}
+.perfil-page__avatar-grande img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfil-page__card h2 {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  color: var(--color-text);
+}
+.perfil-page__email {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+.perfil-page__tipo {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  margin: var(--space-2) 0;
+}
+
+.perfil-page__acoes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid #eee;
+}
+
+/* ============ FORMULÁRIO ============ */
+.perfil-page__formulario {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-sm);
+}
+.perfil-page__form-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.perfil-page__form-conteudo h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin: 0 0 var(--space-2);
+}
+.perfil-page__grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+.perfil-page__form-acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.perfil-page__preview-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+.perfil-page__preview-img {
+  max-width: 240px;
+  border-radius: var(--radius-md);
+  border: 4px solid var(--color-primary);
+}
+
+/* 5.3 — modal de senha */
+.perfil-page__senha-modal {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-2);
+}
+.perfil-page__senha-modal p {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .perfil-page__layout {
+    grid-template-columns: 1fr;
+  }
+  .perfil-page__card {
+    position: static;
+  }
+  .perfil-page__grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

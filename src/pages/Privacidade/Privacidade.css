@@ -1,0 +1,62 @@
+.doc-page {
+  background: #fff;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+.doc-page__cabecalho {
+  padding: 40px 16px 24px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.doc-page__cabecalho h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--color-primary, #8B2E1A);
+}
+.doc-page__atualizado {
+  margin: 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+.doc-page__voltar {
+  color: var(--color-primary, #8B2E1A);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.doc-page__voltar:hover {
+  text-decoration: underline;
+}
+
+.doc-page__conteudo {
+  max-width: 760px;
+  margin: 32px auto 0;
+  padding: 0 20px;
+}
+.doc-page__conteudo section { margin-bottom: 28px; }
+.doc-page__conteudo h2 {
+  font-size: 1.2rem;
+  color: #222;
+  margin: 0 0 10px;
+  border-left: 3px solid var(--color-primary, #8B2E1A);
+  padding-left: 10px;
+}
+.doc-page__conteudo p,
+.doc-page__conteudo li {
+  color: #333;
+  line-height: 1.7;
+  font-size: 0.98rem;
+}
+.doc-page__conteudo ul { padding-left: 22px; }
+.doc-page__conteudo a { color: var(--color-primary, #8B2E1A); }
+.doc-page__conteudo code {
+  background: #f3f3f3;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}

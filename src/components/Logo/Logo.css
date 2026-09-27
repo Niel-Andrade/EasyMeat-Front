@@ -1,0 +1,42 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  user-select: none;
+}
+
+.logo__icon {
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Tamanhos */
+.logo--sm .logo__icon  { width: 28px; height: 28px; }
+.logo--sm .logo__text  { font-size: 1.05rem; }
+
+.logo--md .logo__icon  { width: 36px; height: 36px; }
+.logo--md .logo__text  { font-size: 1.35rem; }
+
+.logo--lg .logo__icon  { width: 56px; height: 56px; }
+.logo--lg .logo__text  { font-size: 1.9rem; }
+
+/* Cores */
+.logo--primary .logo__icon   { color: var(--color-primary, #8B2E1A); }
+.logo--primary .logo__text   { color: var(--color-primary, #8B2E1A); }
+.logo--primary .logo__text-accent { color: var(--color-accent, #D4A017); }
+
+.logo--white .logo__icon     { color: #ffffff; }
+.logo--white .logo__text     { color: #ffffff; }
+.logo--white .logo__text-accent { color: rgba(255, 255, 255, 0.8); }
+
+.logo--dark .logo__icon      { color: #1a1a1a; }
+.logo--dark .logo__text      { color: #1a1a1a; }
+.logo--dark .logo__text-accent { color: var(--color-accent, #D4A017); }
+
+.logo__text-accent {
+  font-weight: 800;
+}

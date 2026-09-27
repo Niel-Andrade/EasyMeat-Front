@@ -1,0 +1,125 @@
+.admin-anuncios {
+  padding: 24px 16px;
+}
+
+.admin-anuncios__cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-anuncios__titulo {
+  margin: 0;
+  color: var(--color-primary, #8B2E1A);
+  font-size: 1.6rem;
+}
+
+.admin-anuncios__filtros {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.admin-anuncios__filtros input,
+.admin-anuncios__filtros select {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  background: #fff;
+}
+
+.admin-anuncios__tabela {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.admin-anuncios__tabela thead {
+  background: var(--color-primary, #8B2E1A);
+  color: #fff;
+}
+
+.admin-anuncios__tabela th,
+.admin-anuncios__tabela td {
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 0.92rem;
+}
+
+.admin-anuncios__tabela tbody tr {
+  border-bottom: 1px solid #eee;
+}
+.admin-anuncios__tabela tbody tr:hover {
+  background: #fafafa;
+}
+
+.admin-anuncios__acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-anuncios__btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: #f1f1f1;
+}
+.admin-anuncios__btn--perigo {
+  background: #fdecea;
+  color: #b3261e;
+  border-color: #f5c2c0;
+}
+.admin-anuncios__btn--destaque {
+  background: #fff7e0;
+  color: #846200;
+  border-color: #f0d68a;
+}
+
+.admin-anuncios__paginacao {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.admin-anuncios__paginacao button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+.admin-anuncios__paginacao button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .admin-anuncios__tabela thead {
+    display: none;
+  }
+  .admin-anuncios__tabela,
+  .admin-anuncios__tabela tbody,
+  .admin-anuncios__tabela tr,
+  .admin-anuncios__tabela td {
+    display: block;
+  }
+  .admin-anuncios__tabela tr {
+    background: #fff;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  }
+  .admin-anuncios__tabela td {
+    padding: 8px 12px;
+    border: none;
+  }
+}

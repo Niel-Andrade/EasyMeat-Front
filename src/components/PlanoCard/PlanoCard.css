@@ -1,0 +1,127 @@
+/* ==========================================================
+   PlanoCard
+   ========================================================== */
+
+.plano-card {
+  position: relative;
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  height: 100%;
+  transition: all var(--transition-base);
+}
+
+.plano-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.plano-card--destaque {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.plano-card--premium {
+  border-color: var(--color-accent);
+  background: linear-gradient(135deg, var(--color-text) 0%, #3a2516 100%);
+  color: var(--color-text-inverse);
+}
+
+.plano-card--selecionado {
+  box-shadow: 0 0 0 4px rgba(139, 46, 26, 0.3);
+}
+
+.plano-card__selo {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  padding: var(--space-1) var(--space-4);
+  border-radius: var(--radius-full);
+  letter-spacing: 0.5px;
+}
+
+.plano-card--premium .plano-card__selo {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.plano-card__nome {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-extrabold);
+  margin: 0;
+}
+
+.plano-card__descricao {
+  font-size: var(--font-size-sm);
+  opacity: 0.8;
+}
+
+.plano-card__preco {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  margin: var(--space-4) 0;
+}
+
+.plano-card__preco-cifrao {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.plano-card__preco-valor {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-extrabold);
+  line-height: 1;
+}
+
+.plano-card__preco-periodo {
+  font-size: var(--font-size-sm);
+  opacity: 0.7;
+}
+
+.plano-card__beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+  flex: 1;
+}
+
+.plano-card__beneficios li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+}
+
+.plano-card__check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-success);
+  color: var(--color-text-inverse);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.plano-card--destaque .plano-card__check,
+.plano-card--premium .plano-card__check {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}

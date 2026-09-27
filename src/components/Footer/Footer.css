@@ -1,0 +1,96 @@
+/* ==========================================================
+   EASY MEAT — Footer
+   - 2.1 padding-top confortável para afastar do conteúdo
+   ========================================================== */
+
+.footer {
+  background: #1a1a1a;
+  color: #ccc;
+  /* 2.1 Espaçamento superior adequado */
+  padding-top: 56px;
+  margin-top: 64px;
+}
+
+.footer__container {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  padding-bottom: 36px;
+}
+
+.footer__coluna h4 {
+  color: #fff;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+
+.footer__logo {
+  margin-bottom: 12px;
+}
+.footer__logo .logo__icon,
+.footer__logo .logo__text {
+  color: #fff;
+}
+.footer__logo .logo__text-accent {
+  color: var(--color-accent, #D4A017);
+}
+
+.footer__descricao {
+  color: #aaa;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__links a,
+.footer__links button {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.92rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.footer__links a:hover,
+.footer__links button:hover {
+  color: var(--color-accent, #D4A017);
+}
+
+.footer__base {
+  border-top: 1px solid #333;
+  padding: 18px 0;
+  background: #0f0f0f;
+}
+.footer__base p {
+  margin: 0;
+  text-align: center;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,29 @@
+/* ==========================================================
+   ErrorState
+   ========================================================== */
+
+.error-state {
+  text-align: center;
+  padding: var(--space-16) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  background-color: var(--color-error-light);
+  border-radius: var(--radius-lg);
+}
+
+.error-state__icone {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.error-state__titulo {
+  font-size: var(--font-size-xl);
+  color: var(--color-error);
+}
+
+.error-state__mensagem {
+  max-width: 480px;
+  color: var(--color-text);
+}

@@ -1,0 +1,64 @@
+.redefinir-senha {
+  display: flex;
+  justify-content: center;
+  padding: 48px 16px;
+  background: var(--color-background, #f7f7f7);
+  min-height: calc(100vh - 200px);
+}
+
+.redefinir-senha__card {
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.redefinir-senha__titulo {
+  margin: 0;
+  color: var(--color-primary, #8B2E1A);
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.redefinir-senha__texto {
+  color: var(--color-text-muted, #666);
+  text-align: center;
+  font-size: 0.95rem;
+  margin: 0 0 8px;
+}
+
+.redefinir-senha__sucesso,
+.redefinir-senha__erro {
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+}
+.redefinir-senha__sucesso {
+  background: #e7f5ea;
+  color: #1e7a3a;
+  border: 1px solid #b8e0c2;
+}
+.redefinir-senha__erro {
+  background: #fdecea;
+  color: #b3261e;
+  border: 1px solid #f5c2c0;
+}
+
+.redefinir-senha__requisitos {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.86rem;
+  color: #555;
+}
+.redefinir-senha__requisitos ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
